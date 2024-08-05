@@ -116,3 +116,8 @@ async def upload_file(file: UploadFile = File(...)):
         buffer.write(file.file.read())
     genre = find_genre("temp.wav")
     return {"genre": genre}
+
+
+if __name__ == '__main__':
+    import uvicorn
+    uvicorn.run(app)
