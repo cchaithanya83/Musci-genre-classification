@@ -1,0 +1,5 @@
+fastapi
+librosa
+numpy
+joblib
+uvicorn
